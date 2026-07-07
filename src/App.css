@@ -1,0 +1,164 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Body */
+body{
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/* Main Container */
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+/* Weather Card */
+.weather-card{
+    width:100%;
+    max-width:420px;
+    background:rgba(255,255,255,0.18);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,0.3);
+    border-radius:28px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+    color:white;
+}
+
+/* Heading */
+.weather-card h1{
+    font-size:2rem;
+    margin-bottom:30px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+/* Search Box */
+.search-box{
+    display:flex;
+    gap:12px;
+    margin-bottom:30px;
+}
+
+/* Input */
+.search-box input{
+    flex:1;
+    padding:14px 18px;
+    border:none;
+    outline:none;
+    border-radius:14px;
+    font-size:1rem;
+    background:rgba(255,255,255,0.9);
+    color:#333;
+}
+
+/* Placeholder */
+.search-box input::placeholder{
+    color:#666;
+}
+
+/* Button */
+.search-box button{
+    padding:14px 22px;
+    border:none;
+    border-radius:14px;
+    cursor:pointer;
+    font-size:1rem;
+    font-weight:600;
+    background:#ffffff;
+    color:#2196f3;
+    transition:0.3s;
+}
+
+/* Button Hover */
+.search-box button:hover{
+    background:#2196f3;
+    color:white;
+    transform:translateY(-3px);
+}
+
+/* Weather Info */
+.weather-info{
+    margin-top:20px;
+}
+
+/* City Name */
+.weather-info h2{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+/* Temperature */
+.weather-info h3{
+    font-size:3.5rem;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+/* Details */
+.weather-info p{
+    background:rgba(255,255,255,0.2);
+    margin:12px 0;
+    padding:14px;
+    border-radius:14px;
+    font-size:1rem;
+    font-weight:500;
+    transition:0.3s;
+}
+
+/* Hover Effect */
+.weather-info p:hover{
+    background:rgba(255,255,255,0.35);
+    transform:scale(1.03);
+}
+
+/* Mobile Responsive */
+@media(max-width:480px){
+
+    .weather-card{
+        padding:25px;
+        border-radius:20px;
+    }
+
+    .weather-card h1{
+        font-size:1.6rem;
+    }
+
+    .search-box{
+        flex-direction:column;
+    }
+
+    .search-box input,
+    .search-box button{
+        width:100%;
+    }
+
+    .weather-info h2{
+        font-size:1.6rem;
+    }
+
+    .weather-info h3{
+        font-size:2.8rem;
+    }
+
+    .weather-info p{
+        font-size:0.95rem;
+    }
+}
